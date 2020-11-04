@@ -13,10 +13,8 @@ $(textArea).each(function () {
     }
     else if (hr <= dataIndex) {
         $(this).addClass('future')
-
     }
     else {
         $(this).addClass('past')
-
     }
 })
