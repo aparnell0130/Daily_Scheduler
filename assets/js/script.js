@@ -13,10 +13,10 @@ var storageObject = {
 }
 // check each textarea and fill in color based on time
 $('textarea').each(function () {
-    var hr = moment().format('H')
+    var hr = moment().format('HH')
     var dataIndex = $(this).data('index')
     var areaHr = this.id
-    console.log(areaHr)
+    console.log(areaHr, hr)
     if (hr == areaHr) {
         $(this).addClass('present')
     }
